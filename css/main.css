@@ -1,0 +1,308 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+h1 {
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: Nunito;
+    font-weight: 700;
+}
+
+p {
+    font-family: Nunito;
+    font-weight: 400;
+}
+
+body {
+    background-color: #e5e3e3;
+}
+
+table {
+    font-family: Nunito;
+    font-weight: 400;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    display: inline-block;
+    margin: 0;
+    max-width: 90%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+.container {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.name-header {
+
+    text-align: center;
+}
+
+.main-nav {
+    font-family: Nunito;
+    font-weight: 400;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+.main-nav li {
+    max-width: 90%;
+    display: block;
+    padding: 2%;
+    margin: 2% auto;
+    background-color: white;
+}
+
+.profile {
+    text-align: center;
+    margin: 0 5%;
+}
+
+.profile-pic {
+    width: auto;
+    height: auto;
+    max-width: 60%;
+    max-height: 60%;
+    border-radius: 10px;
+}
+
+.portfolio-container {
+    width: 100%;
+    background-color: white;
+    padding: 0;
+}
+
+.portfolio-header {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.portfolio {
+    max-width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5% 0;
+}
+
+.portfolio-text {
+    font-size: 1em;
+}
+
+.portfolio-image {
+    width: auto;
+    height: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.contact {
+    text-align: center;
+    padding: 5% 0;
+    border-bottom: inset;
+    border-bottom-color: grey;
+    border-bottom-width: 1px
+}
+
+.footer-name {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.footer-back {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.footer-tablet {
+    font-family: Nunito;
+    font-weight: 400;
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+@media (max-width: 767px) {
+    .footer-nav {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .main-nav li {
+        font-size: 1.2em;
+        display: inline-block;
+        background-color: inherit;
+        margin: 2%;
+    }
+    
+    .profile {
+        text-align: left;
+        padding-bottom: 10%;
+    }
+    
+    .profile-text {
+        font-size: 1.2em;
+        padding-top: 6%;
+        padding: 0;
+    }
+    
+    .profile-pic {
+        float: right;
+        height: auto;
+        width: auto;
+        max-height: 200px;
+        margin-right: 5%;
+        margin-left: 1%;
+    }
+    
+    .portfolio {
+        max-width: 50%;
+        float: left;
+    }
+    
+    .portfolio-text {
+        font-size: 1.2em;
+        padding: 0 3%;
+    }
+    
+    .contact-text {
+        font-size: 1.2em;
+    }
+    
+    .clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+     
+     .footer-mobile {
+         display: none;
+     }
+     
+     .footer-nav{
+        width: 40%;
+        font-size: 1em;
+        background-color: inherit;
+        position: absolute;
+        right: 0;
+     }
+     
+     .footer-nav li {
+         display: inline-block;
+         margin: 0 5%;
+     }
+     
+    .clearfix { display: inline-block; }
+}
+
+@media (min-width: 1024px) {
+    .header {
+        padding-bottom: 2%
+    }
+    
+    .name-header {
+        text-align: left;
+    }
+    
+    .main-nav {
+        width: 40%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 5%;
+    }
+    
+    .main-nav li {
+        font-size: 1.2em;
+        display: inline-block;
+        background-color: inherit;
+        margin: 2%;
+    }
+    
+    .profile {
+        text-align: left;
+        padding-bottom: 5%;
+    }
+    
+    .profile-text {
+        padding: 0;
+        font-size: 1.1em;
+    }
+    
+    .profile-pic {
+        float: right;
+        height: auto;
+        width: auto;
+        max-height: 250px;
+        margin-left: 5%;
+    }
+    
+    .portfolio {
+        max-width: 33.3%;
+        float: left;
+    }
+    .portfolio-text {
+        font-size: 1em;
+        padding: 0 2.5%;
+    }
+    
+    .contact-text {
+        font-size: 1.1em;
+        padding: 0 20%;
+    }
+    
+    table {
+        font-family: Nunito;
+        font-weight: 400;
+        font-size: 1.1em;
+        text-align: center;
+        max-width: 60%;
+        margin: 0 auto;
+    }
+    
+    .clearfix { display: inline-block; }   
+
+    .clearfix:after {
+         visibility: hidden;
+         display: block;
+         font-size: 0;
+         content: " ";
+         clear: both;
+         height: 0;
+     }
+     
+     .footer-mobile {
+         display: none;
+     }
+     
+
+}
