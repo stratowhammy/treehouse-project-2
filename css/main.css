@@ -45,6 +45,7 @@ footer {
     display: inline-block;
     margin: 0;
     max-width: 90%;
+    padding: 0;
 }
 
 /* ================================= 
@@ -217,7 +218,7 @@ footer {
     }
 
     .footer-nav {
-        width: 40%;
+        width: 60%;
         font-size: 1em;
         background-color: inherit;
         position: absolute;
@@ -315,5 +316,32 @@ footer {
 
     .footer-mobile {
         display: none;
+    }
+}
+
+@media (min-width: 1280px) {
+    .profile {
+
+        text-align: left;
+        padding-bottom: 20%;
+    }
+
+    .profile-text {
+        font-size: 1.2em;
+        padding-right: 35%;
+    }
+
+    .profile-pic {
+        float: right;
+        height: auto;
+        width: auto;
+        max-height: 300px;
+        position: absolute;
+        right: 0;
+        margin-right: 15%;
+    }
+    
+    .contact-text {
+        max-width: 60%;
     }
 }
